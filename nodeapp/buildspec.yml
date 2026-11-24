@@ -1,13 +1,12 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 18
   build:
     commands:
+      - cd nodeapp
       - npm install
 
 artifacts:
   files:
     - '**/*'
+  base-directory: nodeapp
